@@ -15,6 +15,7 @@
 ```css
 .container {
     display: flex;
+    /* display: inline-flex; (inline 使用) */
 }
 ```
 
@@ -84,8 +85,7 @@
   + 主轴水平时, 如果子项未设置高度或设置为 `auto` , 其高度将占满每行
   + 主轴竖直时, 如果子项未设置宽度或设置为 `auto` , 其宽度将占满每行
 
-<img src="C:\Users\Shirakami Fubuki\Desktop\001.png" alt="001" style="zoom:67%;" />
-
+<img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071011.png" alt="001" style="zoom:67%;" />
 
 
 ### 6. align-content
@@ -105,8 +105,7 @@
   + 主轴水平时, 如果子项未设置高度或设置为 `auto` , 其高度将占满每行
   + 主轴竖直时, 如果子项未设置宽度或设置为 `auto` , 其宽度将占满每行
 
-<img src="C:\Users\Shirakami Fubuki\Desktop\002.png" alt="002" style="zoom:67%;" />
-
+<img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071012.png" alt="002" style="zoom:67%;" />
 
 
 ## 作用在flex子项上的属性
