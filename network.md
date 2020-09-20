@@ -10,8 +10,6 @@ HTTP 基础概念
   Host: localhost:8888    域名或IP
   Accept: text/html    用来告知客户端可以处理的内容类型
   Content-type: application/x-www-form-urlencoded    请求体的格式
-  (这是个回车)
+  (这是个回车) 
   (请求体)
   ```
-
-  
