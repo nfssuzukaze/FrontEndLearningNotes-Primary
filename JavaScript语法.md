@@ -125,6 +125,7 @@
 
     + 形式
 
+<<<<<<< HEAD
         ```javascript
         while (expression) {
             statement
@@ -150,6 +151,34 @@
   
       + 跳过此次循环
   
+=======
+      ```javascript
+      while (expression) {
+          statement
+      }
+      ```
+
+      只要 `expression` 可以被转换为 `true` ，那么就会不断的执行 `statement`
+
+  + `for` 循环
+
+    + 形式
+
+      ```javascript
+      for (initialization; condition; final-expression) {
+      statement
+      }
+      ```
+
+  + `break`
+
+    + 跳出当前循环
+
+  + `continue`
+
+    + 跳过此次循环
+
+>>>>>>> 5ddf2fc33f5e344dee25b7201fc1de1c2c4f4f28
 + `label`
 
   + 举例
@@ -168,4 +197,8 @@
     }
     ```
 
+<<<<<<< HEAD
   + 类似与 `c` 的 `goto step` 中的 `step`
+=======
+  + 类似与 `c` 的 `goto step` 中的 `step`
+>>>>>>> 5ddf2fc33f5e344dee25b7201fc1de1c2c4f4f28
