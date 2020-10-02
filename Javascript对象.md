@@ -52,7 +52,7 @@
   ```javascript
   delete obj.xxx // 删除 obj 对象的 "xxx" 属性
   'xxx' in obj === false // obj 没有 "xxx" 属性
-  'xxx' in obj && obj.xxx === undefined // obj 有 "xxx" 属性，其值为 undefined
+  'xxx' in obj && obj.xxx === undefined // obj 能够获取 "xxx" 属性，其值为 undefined
   ```
 
   + 注意：**没有对应属性** 和 **对应属性的值为 `undefined`** 是不一样的
@@ -95,5 +95,7 @@
     ```javascript
     let obj = Object.create(o) // 此时，obj 的隐藏属性指向了对象 o
     ```
-  
-    
+
++ `'xxx' in obj` 与 `obj.hasOwnProperty('xxx')` 的区别
+  + `'xxx' in obj` 指的是 `obj` 能否获得 `'xxx'` 属性，不论是私有还是公有
+  + `obj.hasOwnProperty('xxx')` 是指 `obj` 是否有名为 `'xxx'` 的私有属性
