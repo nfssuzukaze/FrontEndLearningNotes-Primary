@@ -1,0 +1,15 @@
+@media (max-width: 500px) {
+    #text {
+        height: 50vh;
+        overflow: auto;
+        position: absolute;
+        top: 0;
+    }
+    #show {
+        height: 60vw;
+        width: 60vw;
+        top: 50vh;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
