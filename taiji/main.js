@@ -50,11 +50,14 @@ let style = document.querySelector("#style")
 let step = () => {
     setTimeout(() => {
         isComment = str[pointer] === '/' && str[pointer + 1] === '*' ? true : (str[pointer - 2] === '*' && str[pointer - 1] === '/' ? !isComment : isComment)
-        style.innerHTML += isComment === false ? str[pointer] : ""
+        // 确认当前文本是否处于注释状态
+		style.innerHTML += isComment === false ? str[pointer] : ""
+		// 若不处于注释状态，则将文本添加到CSS中
         if (!(str[pointer] === '/' && str[pointer + 1] === '*' ||
             str[pointer - 1] === '/' && str[pointer] === '*' ||
             str[pointer] === '*' && str[pointer + 1] === '/' ||
             str[pointer - 1] === '*' && str[pointer] === '/')) {
+			// 不把注释符号打印出来
             html.innerHTML += str[pointer] === '\n' ? "<br>" : (str[pointer] === ' ' ? "&nbsp;" : str[pointer])
             window.scrollTo(0, 9999)
             html.scrollTo(0, 9999)
