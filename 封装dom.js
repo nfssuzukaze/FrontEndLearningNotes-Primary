@@ -26,10 +26,10 @@ window.dom = {
     },
     empty(parentNode) {
         const array = []
-        let x = node.firstChild
-        while(x){
-          array.push(dom.remove(node.firstChild))
-          x = node.firstChild
+        let x = parentNode.firstChild
+        while(x) {
+          array.push(dom.remove(parentNode.firstChild))
+          x = parentNode.firstChild
         }
         return array
     },
