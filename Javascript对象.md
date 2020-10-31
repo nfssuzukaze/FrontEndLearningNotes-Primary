@@ -22,8 +22,8 @@
 
   ```javascript
   let tempvalue = 'name'
-  let person = {tempvalue: 'saber'}	// 此时的属性名为 "tempvalue"
-  let person = {[person]: 'saber'} 	// 此时的属性名为 "name"
+  let person = {tempvalue: 'saber'}		// 此时的属性名为 "tempvalue"
+  let pers = {[tempvalue]: 'saber'} 		// 此时的属性名为 "name"
   ```
 
 + 引用对象值时，`[]` 的作用
@@ -33,13 +33,13 @@
   let arr = [1,2,3]
   
   let obj = {[person]: 'person'}
-  // obj 对象中有	[object Object]: "person" 键值对
+  // obj 对象中有	[object Object]: "person" 键值对;其中 [object Object] 是 person 对象隐式转换为 String 类型的结果
   let o = {[arr]: 'arr'}
-  // obj 对象中有 1,2,3: "arr" 键值对
+  // obj 对象中有 1,2,3: "arr" 键值对;其中 1,2,3 是 arr 数组隐式转换为 String 类型的结果
   // 可以知道，js 中与对象有关的 [] 可以将其中的值隐式转换为 String 类型
   ```
 
-  + **结论：与对象的属性名有关时的 `[]` 可以将其中的值转换为 `String` 类型**
+  + **结论：与对象的属性名有关时的 `[]` 会尝试将其中的值隐式转换为 `String` 类型，并以转换所得的结果作为属性名**
 
 + 对象的隐藏属性
 

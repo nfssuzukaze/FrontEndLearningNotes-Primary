@@ -75,20 +75,20 @@
 
     + `skewX(<angle>)` : 
     ![skewX](https://user-images.githubusercontent.com/70133960/92322492-13ee4680-f064-11ea-8604-fd4a7f28c62a.png)
-
+    
     + `skewY(<angle>)` : 
     ![skewY](https://user-images.githubusercontent.com/70133960/92322496-1a7cbe00-f064-11ea-8973-6dad77559845.png)
-
+    
     + `skew(<angle> , <angle>?)` : 
     ![skewXY](https://user-images.githubusercontent.com/70133960/92322558-91b25200-f064-11ea-8716-411374d7afcb.png)
-
+    
       + 若有一个参数, 则代表 `skewX` 
       + 若有两个参数, 则第一个是 `skewX` , 第二个是 `skewY` 
-
+    
     # 2. transition
-
+    
     语法 : `transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]` 
-
+    
     + `transition-property` : 有渐变需求的属性, 可以写如 `right-margin` , `padding` 之类详细的属性, 也可以写 `all` 来直接代称所有属性
     + `transition-duration` : 指定渐变的时间, 可以是秒 `s` , 可以是毫秒 `ms` 
     + `transition-timing-function` : 渐变的速度
@@ -100,11 +100,11 @@
       + `step-start` : 在改变属性, 触发 `transition` 时, 直接跳到指定状态
       + `step-end` : 在改变属性, 触发 `transition` 开始, 经过 `transition-duration` 后, 直接跳到指定状态
     + `transition-delay` : 渐变的延迟
-
+    
     # 3. animation
-
+    
     语法 : `animation: [animation-name] [animation-duration] [animation-timing-function] [animation-delay] [animation-direction] [animation-iteration-count] [animation-fill-mode] [animation-play-state]`
-
+    
     + `<animation-name> = <keyframes-name> ` 
     + `animation-duration` : 与 `transition-duration` 类似
     + `animation-timing-function` : 与 `transition-timing-function` 类似
