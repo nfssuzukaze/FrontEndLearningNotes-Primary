@@ -1,0 +1,27 @@
+.app2 {
+    height: 50vh;
+    width: 50vw;
+    border: 1px solid blue;
+}
+
+.app2 > .tab {
+    display: flex;
+}
+
+.app2 > .tab > li {
+    width: 50%;
+    text-align: center;
+    border: 5px solid lightblue;
+}
+
+.app2 > .tab > li.selected {
+    background-color: antiquewhite;
+}
+
+.app2 > .innerPage > li {
+    display: none;
+}
+
+.app2 > .innerPage > li.active {
+    display: block;
+}

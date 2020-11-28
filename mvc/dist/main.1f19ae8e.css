@@ -1,0 +1,120 @@
+* ,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.global {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.global > section {
+    height: 50vh;
+    width: 50vw;
+    border: 1px solid black;
+}
+.app1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.app1 > .show {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+}
+.app1 > .operator > button {
+    height: 5vh;
+    width: 5vh;
+    background-color: lightblue;
+    outline: none;
+    border: 1px solid grey;
+}
+.app2 {
+    height: 50vh;
+    width: 50vw;
+    border: 1px solid blue;
+}
+
+.app2 > .tab {
+    display: flex;
+}
+
+.app2 > .tab > li {
+    width: 50%;
+    text-align: center;
+    border: 5px solid lightblue;
+}
+
+.app2 > .tab > li.selected {
+    background-color: antiquewhite;
+}
+
+.app2 > .innerPage > li {
+    display: none;
+}
+
+.app2 > .innerPage > li.active {
+    display: block;
+}
+.app3 {
+
+}
+
+.app3 > .square {
+    margin-top: 3vw;
+    margin-left: 3vw;
+    height: 10vw;
+    width: 10vw;
+    border: 1px solid grey;
+    transition: transform 1s;
+}
+
+.app3 > .square.active {
+    transform: translateX(30vw);
+}
+.app4 {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes change {
+    0% {
+        background-color: lightgreen;
+    }
+    50% {
+        background-color: lightblue;
+    }
+    100% {
+        background-color: lightsalmon;
+    }
+}
+
+.app4 > .circle {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.app4 > .circle.active {
+    animation: change 1s infinite linear alternate;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

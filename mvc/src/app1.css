@@ -1,0 +1,21 @@
+.app1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.app1 > .show {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+}
+.app1 > .operator > button {
+    height: 5vh;
+    width: 5vh;
+    background-color: lightblue;
+    outline: none;
+    border: 1px solid grey;
+}

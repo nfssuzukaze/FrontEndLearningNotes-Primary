@@ -1,0 +1,14 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.global {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.global > section {
+    height: 50vh;
+    width: 50vw;
+    border: 1px solid black;
+}
